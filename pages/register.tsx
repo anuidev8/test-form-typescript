@@ -1,11 +1,11 @@
+
+
 import type { NextPage } from 'next'
-import { useState } from 'react';
-import LoginComponent from '../components/LoginForm'
-import { FormDataProps } from '../components/LoginForm/types';
+import {useState} from 'react'
+import RegisterForm from '../components/RegisterForm';
 import Modal from '../components/Modal';
 
-
-const Home: NextPage = () => {
+const Register: NextPage = () => {
   const [data,setData] = useState<string|null>(null)
   const handleSubmit = (e:string) =>{
     console.log(e);
@@ -14,14 +14,14 @@ const Home: NextPage = () => {
   }
   return (
     <main>
-      {
+        {
           data &&
           <Modal onClose={()=>setData(null)} data={data} />
 
       }
-        <LoginComponent handleSubmit={handleSubmit}  />
+        <RegisterForm handleSubmit={handleSubmit}  />
     </main>
   )
 }
 
-export default Home
+export default Register

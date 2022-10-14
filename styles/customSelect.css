@@ -1,0 +1,79 @@
+
+.select-container{
+    position: relative;
+    margin-top: 2rem;
+}
+.select-field{
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: .6rem .6rem;
+    height: var(--form-item-height);
+    background-color: white;
+    border:1px solid rgb(196, 196, 196);
+    border-radius: 2rem;
+}
+.select-field figure{
+    color: var(--primary-color);
+    margin-right: .2rem;
+  
+}
+.select-field input{
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.select-field input::placeholder{
+    color: var(--primary-color);
+    font-size: .95rem;
+    font-weight: bold;
+    
+  }
+  .select-field button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border: none;
+      width: 1.5rem;
+      color: var(--primary-color);
+      font-weight: bold;
+      transition: background-color .3s;
+      cursor: pointer;
+  }
+  .select-field button:hover{
+      background-color:rgb(240, 240, 240) ;
+  }
+  .select-list{
+      position: absolute;
+      top:110%;
+      width: 100%;
+      height: 13rem;
+      padding: 1rem;
+      margin: 0;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,.03);
+ 
+      list-style: none;
+      overflow-y: auto;
+      z-index: 100;
+  }
+  .select-list li{
+      margin: 0;
+      padding-bottom: .4rem;
+      list-style: none;
+      border-bottom: 1px solid rgb(232, 232, 232);
+      margin-bottom: .5rem;
+      cursor: pointer;
+      transition: color .3s ease;
+
+
+  } 
+  .select-list li:hover{
+    color: var(--primary-color);
+
+
+  } 

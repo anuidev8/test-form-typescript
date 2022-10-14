@@ -1,0 +1,20 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 110;
+    background-color: rgba(0,0,0,.2);
+   
+}
+
+.modalBox{
+    
+    background-color: white;
+    padding: 5rem;
+    border-radius: 1rem;
+    height: auto;
+}

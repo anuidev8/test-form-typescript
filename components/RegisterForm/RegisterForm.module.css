@@ -1,0 +1,14 @@
+.policy{
+    display: flex;
+    margin-top: 2rem;
+    font-size: .9rem;
+}
+
+.policy label{
+    margin-left: .5rem;
+}
+
+.policy a{
+    color: var(--primary-color);
+    text-decoration: underline;
+}

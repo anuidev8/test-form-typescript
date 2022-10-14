@@ -1,0 +1,52 @@
+.forgotLink{
+    display: flex ;
+    justify-content: flex-end;
+    padding-top: .5rem;
+    font-size: 1rem;
+}
+.checkRemember{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: .8rem;
+    font-weight: bold;
+}
+.checkRemember label{
+    margin-left: .2rem;
+}
+.checkRemember input{
+    visibility: hidden;
+}
+
+
+.checkRememberBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute ;
+    padding-top: .1rem;
+    top: 0;
+    left: .3rem;
+    width: .9rem;
+    height: .9rem;
+    border:1px solid var(--primary-color);
+    border-radius: .2rem;
+    color: white;
+    transition: background-color .3s;
+}
+.checkRememberIcon{
+    transform: scale(0);
+    transition: transform .3s;
+    transition-delay: .3s;
+}
+.checkRemember input:checked ~ label .checkRememberBox {
+    background-color: var(--primary-color);
+   
+}
+.checkRemember input:checked ~ label .checkRememberBox {
+    background-color: var(--primary-color);
+}
+.checkRemember input:checked ~ label .checkRememberBox .checkRememberIcon{
+    transform: scale(1);
+}
